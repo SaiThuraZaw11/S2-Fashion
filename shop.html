@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop All | S2 Fashion</title>
+<meta name="description" content="Browse the full S2 Fashion collection — dresses, tops, jeans, jackets, skirts and more. Filter by category, price and sort by newest or popularity.">
+<meta name="keywords" content="shop fashion, online clothing store, women's clothing, dresses, jeans, jackets">
+<meta property="og:title" content="Shop All | S2 Fashion">
+<meta property="og:description" content="Browse the full S2 Fashion collection.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Work+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">S2 <span>Fashion</span></a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="shop.html" class="active">Shop</a>
+      <a href="shop.html">Categories</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn search-toggle" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <a href="cart.html" class="icon-btn" aria-label="Shopping cart">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span class="cart-count">0</span>
+      </a>
+      <button class="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="search-panel">
+    <form role="search">
+      <input type="text" placeholder="Search for dresses, jeans, jackets..." aria-label="Search products">
+      <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+  </div>
+</header>
+
+<div class="mobile-nav">
+  <button class="mobile-nav-close" aria-label="Close menu">&times;</button>
+  <a href="index.html">Home</a>
+  <a href="shop.html">Shop</a>
+  <a href="shop.html">Categories</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<main>
+  <div class="page-title-bar">
+    <div class="container">
+      <span class="eyebrow">Full Collection</span>
+      <h1 style="font-size:clamp(1.9rem,3.4vw,3rem);">Shop All</h1>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="shop-layout">
+      <aside class="filters">
+        <form class="search-bar-shop" id="shop-search-form" role="search">
+          <input type="text" id="shop-search-input" placeholder="Search products..." aria-label="Search products">
+          <button type="submit" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+
+        <div class="filter-block">
+          <h4>Category</h4>
+          <div id="category-filter-list"></div>
+        </div>
+
+        <div class="filter-block">
+          <h4>Price Range</h4>
+          <div class="price-range">
+            <input type="number" id="min-price" placeholder="Min" min="0" aria-label="Minimum price">
+            <span>—</span>
+            <input type="number" id="max-price" placeholder="Max" min="0" aria-label="Maximum price">
+          </div>
+        </div>
+
+        <button type="button" id="clear-filters" class="btn btn-outline btn-block btn-sm">Clear Filters</button>
+      </aside>
+
+      <div>
+        <div class="shop-toolbar">
+          <span class="result-count" id="shop-result-count"></span>
+          <select id="sort-select" aria-label="Sort products">
+            <option value="newest">Sort: Newest</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="popular">Sort: Popular</option>
+          </select>
+        </div>
+        <div class="product-grid" id="shop-product-grid"></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">S2 <span>Fashion</span></a>
+      <p class="mt-4">Modern, elegant clothing designed for real life. Small collections, considered fabrics, made to last.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Customer Service</h4>
+      <ul>
+        <li><a href="cart.html">Shopping Cart</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="contact.html">Shipping &amp; Returns</a></li>
+        <li><a href="contact.html">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li>hello@s2fashion.com</li>
+        <li>+1 (555) 123-4567</li>
+        <li>21 Ateneo Ave, Manila, PH</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>&copy; 2026 S2 Fashion. All rights reserved.</span>
+    <span>Crafted with care for modern wardrobes.</span>
+  </div>
+</footer>
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/app.js"></script>
+<script src="js/shop.js"></script>
+</body>
+</html>
