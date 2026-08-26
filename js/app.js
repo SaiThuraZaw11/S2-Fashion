@@ -145,8 +145,12 @@ function initAddToCartDelegation(container = document) {
 function renderFeaturedProducts() {
   const grid = document.querySelector("#featured-products-grid");
   if (!grid) return;
-  const featured = PRODUCTS.slice(0, 8);
+
+  const featured = PRODUCTS.filter(product => product.isNew).slice(0, 8);
+
   grid.innerHTML = featured.map(buildProductCard).join("");
+
+  initScrollReveal();
 }
 
 /* ---------------- Homepage: Category Card Images (kept in one place) ---------------- */
